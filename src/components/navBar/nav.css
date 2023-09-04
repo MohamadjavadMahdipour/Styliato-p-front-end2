@@ -1,0 +1,84 @@
+.btn {
+  position: relative;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+}
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.btn:hover {
+  transition-delay: 0.2s;
+}
+
+.btn:hover:before {
+  transition-delay: 0s;
+}
+
+.btn:hover:after {
+  background: var(--magenta);
+  opacity: 0.9;
+  border-radius: 9px;
+  transition-delay: 0.15s;
+}
+
+.from-left:before,
+.from-left:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.from-left:before {
+  right: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.from-left:after {
+  left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+  width: 100%;
+}
+.bg-gradiant {
+  background: linear-gradient(
+    to bottom,
+    var(--dark-font),
+    rgba(0, 0, 0, 0.4),
+    transparent
+  );
+}
+/* svg animation footer
+animation: svg-footer-animate 3s linear infinite;
+0% {
+  stroke-dashoffset: 1750vw;
+}
+20% {
+  stroke-dashoffset: 1550vw;
+}
+40% {
+  stroke-dashoffset: 1250vw;
+}
+50% {
+  stroke-dashoffset: 1000vw;
+}
+60% {
+  stroke-dashoffset: 300vw;
+  fill: transparent;
+}
+70% {
+  stroke-dashoffset: 0;
+  fill: var(--gold);
+}
+100% {
+  stroke-dashoffset: 0;
+  fill: var(--gold);
+} */
