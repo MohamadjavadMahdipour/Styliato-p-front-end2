@@ -1,13 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --dark-bg: #1d2123;
+  --gold: #D77A00FF;
+  --magenta: #ff0074;
+  --dark-magenta: #230314;
+  --dark-blue: #080d17ff;
+  --dark-gold: #130c07;
+  --dark-font: #101010;
+  --light-font: #e0e0e0;
+}
+@font-face {
+  font-family: "Mont-Black";
+  src: local("Mont-Black"), url("./fonts/Mont-Black.eot") format("eot"),
+    url("./fonts/Mont-Black.ttf") format("ttf"),
+    url("./fonts/Mont-Black.woff") format("woff"),
+    url("./fonts/Mont-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Mont-Bold";
+  src: local("Mont-Bold"), url("./fonts/Mont-Bold.eot") format("eot"),
+    url("./fonts/Mont-Bold.ttf") format("ttf"),
+    url("./fonts/Mont-Bold.woff") format("woff"),
+    url("./fonts/Mont-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Mont-Light";
+  src: local("Mont-Light"), url("./fonts/Mont-Light.eot") format("eot"),
+    url("./fonts/Mont-Light.ttf") format("ttf"),
+    url("./fonts/Mont-Light.woff") format("woff"),
+    url("./fonts/Mont-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Mont-Regular";
+  src: local("Mont-Regular"), url("./fonts/Mont-Regular.eot") format("eot"),
+    url("./fonts/Mont-Regular.ttf") format("ttf"),
+    url("./fonts/Mont-Regular.woff") format("woff"),
+    url("./fonts/Mont-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Mont-SemiBold";
+  src: local("Mont-SemiBold"), url("./fonts/Mont-SemiBold.eot") format("eot"),
+    url("./fonts/Mont-SemiBold.ttf") format("ttf"),
+    url("./fonts/Mont-SemiBold.woff") format("woff"),
+    url("./fonts/Mont-SemiBold.woff2") format("woff2");
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
